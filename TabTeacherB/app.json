@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "TabTeacherB",
+    "slug": "TabTeacherB",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/default/tab_teacher_icon.jpg",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/default/tab_teacher_icon.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "plugins": [
+      "@react-native-firebase/app"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "bundleIdentifier": "com.tabteacher.TabTeacherB"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/default/tab_teacher_icon.jpg",
+        "backgroundColor": "#ffffff"
+      },
+      "googleServicesFile": "./google-services.json",
+      "package": "com.tabteacher.TabTeacherB"
+    },
+    "web": {
+      "favicon": "./assets/default/tab_teacher_icon.jpg"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c74e0a76-bbf0-47a6-b213-afa0dd96edc5"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/c74e0a76-bbf0-47a6-b213-afa0dd96edc5"
+    }
+  }
+}
