@@ -12,6 +12,11 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
+    scrollable: {
+        minWidth: '100%',
+        alignItems: 'center',
+        paddingBottom: verticalScale(50),
+    },
     logoImageHolder: {
         height: verticalScale(175),
         width: scale(325),
