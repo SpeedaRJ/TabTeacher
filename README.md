@@ -17,6 +17,8 @@ For future development a look at the [BLE library](https://www.arduino.cc/refere
 
 If we switch to a different controller, the above libraries might not be required anymore and this file would require and update.
 
+### [Raspberry Pi Pico W docs](RPi_Pico_W/README.md)
+
 ### React Native
 
 The react native app is built using [Expo](https://expo.io/). For all the requirements to run and develop the app, a simple `npm install` should suffice in the `./TabTeacher_App` directory. If that doesn't suffice the steps on [this link](https://reactnative.dev/docs/environment-setup) should be followed.  
