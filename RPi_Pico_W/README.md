@@ -1,4 +1,4 @@
-# Raspberry Pi Pico W Setup
+# [Raspberry Pi Pico W](https://www.raspberrypi.com/products/raspberry-pi-pico/) Setup
 
 The program here is writen in MicroPython so you have to set it up on your RPi Pico W. To do so, follow either of these instructions:
 
@@ -30,13 +30,56 @@ See these instructions for help: [Getting Started with Raspberry Pi Pico (and Pi
         bash <(wget -O - https://thonny.org/installer-for-linux)
         ```
 
-2. When you're done, you'll probaby need to set up the proper permissions for your user to be able to access the USB port:
+2. When you're done, you'll probaby need to set up the proper permissions for your user to be able to access the USB serial port (via `/dev/ttyACM0`):
 
     ```
     sudo usermod -a -G dialout $USER
     ```
 
     After running this command, you'll need to at least log out and back in. If that doesn't work, try restarting the computer.
+
+
+# VS Code setup
+
+Install VS Code on your computer and install the following extensions:
+
+- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) for (Micro) Python support
+    - [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance), if not installed with Python extension by default
+- [MicroPico](https://marketplace.visualstudio.com/items?itemName=paulober.pico-w-go) for running/transferring files to/from your board
+- [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) for intelligent code completion
+
+You can also install the extentions by running:
+
+```
+$ code --install-extension ms-python.python
+$ code --install-extension visualstudioexptteam.vscodeintellicode
+$ code --install-extension ms-python.vscode-pylance
+$ code --install-extension paulober.pico-w-go
+```
+
+## Optionally
+
+Optionaly, you can set your `PICO_SDK_PATH`:
+```
+export PICO_SDK_PATH=/home/pi/pico/pico-sdk
+```
+
+## Init/configure project
+
+Go ahead and open a folder and press `Ctrl-Shift-P` (or `Cmd-Shift-P` on a Mac) to open the VS Code command palette and
+select `MicroPico -> Configure Project`. Then click on the "Pico Disconnected" button on the bottom (blue) toolbar, you
+should be connected to your Pico.
+
+## More info
+
+- https://randomnerdtutorials.com/raspberry-pi-pico-vs-code-micropython/
+- https://micropython-stubs.readthedocs.io/en/latest/22_vscode.html
+
+
+# MicroPython
+
+- https://docs.micropython.org/en/latest/develop/gettingstarted.html
+
 
 
 ## Via VS Code (Thonny alternative)
@@ -61,3 +104,7 @@ Then you can open the boards file system and run python files using the command 
 Make sure to save the files from the `./ble_test` folder to the root of the Pico W, and then run the `main.py` file form the Pico W itself.
 
 To test the connection, I used the application [Serial Bluetooth Terminal](https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal) from the Google Play Store.
+
+# Others
+
+- [Random Nerds Tutorials: Raspberry Pi Pico and Pico W Projects, Tutorials and Guides](https://randomnerdtutorials.com/projects-raspberry-pi-pico/)
