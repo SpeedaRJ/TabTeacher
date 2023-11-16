@@ -38,7 +38,26 @@ See these instructions for help: [Getting Started with Raspberry Pi Pico (and Pi
 
     After running this command, you'll need to at least log out and back in. If that doesn't work, try restarting the computer.
 
+
+## Via VS Code (Thonny alternative)
+
+I used the [MicroPico](https://github.com/paulober/MicroPico) extension for VS Code to connect to our Raspberry Pi Pico W. 
+
+The only two things to know are that to connect to the Pico W, you first follow the MicroPython instructions, and then use the command `MicroPico: Configure Project`, followed by the `MicroPico: Connect` command from the command palette.
+
+Then you can open the boards file system and run python files using the command buttons on the bottom task bar of VS Code.
+
+
 # NeoPixel docs
 
 - [AdaFruit GitHub](https://github.com/adafruit/Adafruit_NeoPixel)
 - [MicroPython](https://docs.micropython.org/en/latest/rp2/quickref.html#neopixel-and-apa106-driver)
+
+
+# Bluetooth (BLE) example
+
+- [BLE Blog Example](https://electrocredible.com/raspberry-pi-pico-w-bluetooth-ble-micropython/)
+
+Make sure to save the files from the `./ble_test` folder to the root of the Pico W, and then run the `main.py` file form the Pico W itself.
+
+To test the connection, I used the application [Serial Bluetooth Terminal](https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal) from the Google Play Store.
