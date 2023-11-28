@@ -1,5 +1,7 @@
 # TabTeacher
 
+Below is a compilation of attempts at designing and implementing features for a Start-Up idea, that ultimately didn't bear any fruit. However, it helped all of us involved to learn a lot, and maybe it will help someone else as well.
+
 ## Pre-requisites
 
 ### Arduino IDE
