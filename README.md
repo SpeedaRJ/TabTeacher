@@ -1,6 +1,6 @@
 # TabTeacher
 
-Below is a compilation of attempts at designing and implementing features for a Start-Up idea, that ultimately didn't bear any fruit. However, it helped all of us involved to learn a lot, and maybe it will help someone else as well.
+Below are instructions for the compilation of attempts at designing and implementing ideas for a Start-Up which was in development from July 2023 to November 2023, that ultimately didn't bear any fruit. However, it helped all of us involved to learn a lot, and maybe these implementation files will help someone else as well.
 
 ## Pre-requisites
 
@@ -15,15 +15,15 @@ To then properly work with the current working code, the following libraries are
 
 All the required documentation for the above libraries can be found in their respective GitHub repositories.   
 If something still isn't working on the side of the controller, useful things to try include installing the [serial drivers](https://linuxhint.com/install-esp32-cp2102-serial-driver/) and the [dev kit package](https://www.electronics-lab.com/getting-started-with-espressifs-esp32-c3-devkitm-1-on-arduino-ide/#google_vignette).   
-For future development a look at the [BLE library](https://www.arduino.cc/reference/en/libraries/esp32-ble-arduino/) might be useful.
+For future development, a look at the [BLE library](https://www.arduino.cc/reference/en/libraries/esp32-ble-arduino/) might be useful.
 
-If we switch to a different controller, the above libraries might not be required anymore and this file would require and update.
+If we switch to a different controller, the above libraries might not be required anymore and this file would require an update.
 
 ### [Raspberry Pi Pico W docs](RPi_Pico_W/README.md)
 
 ### React Native
 
-The react native app is built using [Expo](https://expo.io/). For all the requirements to run and develop the app, a simple `npm install` should suffice in the `./TabTeacher_App` directory. If that doesn't suffice the steps on [this link](https://reactnative.dev/docs/environment-setup) should be followed.  
+The React native app is built using [Expo](https://expo.io/). For all the requirements to run and develop the app, a simple `npm install` should suffice in the `./TabTeacher_App` directory. If that doesn't suffice the steps on [this link](https://reactnative.dev/docs/environment-setup) should be followed.  
 
 In addition [EAS](https://www.npmjs.com/package/eas-cli) should be installed. To do so, run
 ```
@@ -31,7 +31,7 @@ npm install -g eas-cli
 ```
 If you're running this on a Linux machine, you'll probably need to prefix the above command with `sudo`.
 
- This is used for publishing the application to the expo application during the development process. Some additional info available in the [Expo documentation](https://docs.expo.dev/eas-update/getting-started/).
+ This is used for publishing the application to the expo application during the development process. Some additional info is available in the [Expo documentation](https://docs.expo.dev/eas-update/getting-started/).
 
 ## Development
 
@@ -58,7 +58,7 @@ To actually connect a physical device, I used [ADB](https://www.xda-developers.c
 
 #### Non-connected device
 
-To develop on a physical device not connected to the computer, first you should install the Expo Go app for either [Apple](https://apps.apple.com/us/app/expo-go/id982107779) or [Android](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www).
+To develop on a physical device not connected to the computer, first, you should install the Expo Go app for either [Apple](https://apps.apple.com/us/app/expo-go/id982107779) or [Android](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www).
 
 To access the development application through Expo Go, a login has been made using the development account. The credentials are available in the [credentials file](./TabTeacher_App/credentials.json). The account is also available on the [Expo website](https://expo.io/@tabteacher).   
 This same account is used to upload the development application to the Expo infrastructure through `eas login`, followed by `eas update`. If these commands don't work, either run them with the `npx ...` command or enter the `npx` environment by simply typing that command.
