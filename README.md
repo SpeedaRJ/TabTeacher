@@ -92,3 +92,7 @@ Also all of the development should be logged in the `./CHANGELOG.md` file in a s
 ```
 
 There is another file `./DEVELOPMENT.md` which contains some *TODOs* and completed tasks/features. This was own personal log, and I will update it as we go/as need be.
+
+# Note
+
+> This repository is redacted and can be used as is by anyone "as-is" under the MIT license.
