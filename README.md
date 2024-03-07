@@ -95,4 +95,4 @@ There is another file `./DEVELOPMENT.md` which contains some *TODOs* and complet
 
 # Note
 
-> This repository is redacted and can be used as is by anyone "as-is" under the MIT license.
+> This repository is redacted and can be used by anyone "as-is" under the MIT license.
